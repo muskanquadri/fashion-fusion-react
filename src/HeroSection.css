@@ -1,0 +1,54 @@
+/* src/HeroSection.css */
+.hero-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  animation: bgSlide 15s infinite;
+  background-size: contain;
+  background-position: center;
+  background-repeat:repeat;
+  margin-top: 70px;
+}
+
+/* Slideshow animation */
+@keyframes bgSlide {
+  0%   { background-image: url('./assets/j2.jpg'); }
+  33%  { background-image: url('./assets/j4.jpg'); }
+  66%  { background-image: url('./assets/y8.jpg'); }
+  100% { background-image: url('./assets/f6.jpg'); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff4081;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
