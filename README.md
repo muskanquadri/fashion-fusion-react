@@ -1,23 +1,16 @@
-# Fashion Fusion 🛍️
+# React + Vite
 
-A modern fashion shopping website built with **React + Vite**, blending elegant design with responsive layout and smooth user experience.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## ✨ Features
+Currently, two official plugins are available:
 
-- 🖼️ Hero section introducing the brand
-- 🛒 Featured products rendered dynamically using `.map()`
-- 📸 About Us section with animated text and background overlay
-- 📞 Footer with contact info and quick links
-- 🎨 Stylish layout with custom buttons and responsive design
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🚀 Tech Stack
+## React Compiler
 
-- React + Vite
-- CSS (custom animations and layout)
-- Git & GitHub for version control
+The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## 📦 Installation
+## Expanding the ESLint configuration
 
-```bash
-npm install
-npm run dev
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
