@@ -13,6 +13,7 @@
   background-position: center;
   background-repeat:repeat;
   margin-top: 70px;
+   
 }
 
 /* Slideshow animation */
@@ -51,4 +52,60 @@
   color: white;
   cursor: pointer;
   border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Let content define height */
+    width: 100%;
+    padding: 4rem 1rem 2rem; /* Top padding for spacing */
+    margin-top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./assets/j2.jpg');
+    animation: none; /* Disable slideshow */
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .hero-content {
+    z-index: 2;
+    max-width: 100%;
+    padding: 0 1rem;
+     overflow-x: hidden;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+     overflow-x: hidden;
+     box-sizing:border-box ;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+     overflow-x: hidden;
+     
+  }
+
+  .hero-content button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 }

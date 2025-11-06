@@ -35,6 +35,8 @@ function FeaturedProducts() {
 ];
 
   return (
+    
+
     <section className="featured-section">
       <h2>Featured Products</h2>
       <div className="product-grid">
@@ -46,7 +48,9 @@ function FeaturedProducts() {
           </div>
         ))}
       </div>
+      
     </section>
+    
   );
 }
 

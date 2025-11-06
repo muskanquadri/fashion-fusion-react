@@ -4,6 +4,8 @@ import './Footer.css';
 
 function Footer() {
   return (
+    
+
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
@@ -30,7 +32,9 @@ function Footer() {
       <div className="footer-bottom">
         <p>© 2025 Fashion Fusion. All rights reserved.</p>
       </div>
+      
     </footer>
+    
   );
 }
 

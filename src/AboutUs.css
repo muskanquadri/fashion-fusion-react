@@ -99,3 +99,42 @@
   cursor: pointer;
   border-radius: 5px;
 }
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .about-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .empty-btn,
+  .filled-btn {
+    width: 100%;
+    max-width: 250px;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+  }
+}

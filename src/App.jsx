@@ -1,12 +1,13 @@
-import React from 'react';
-import Navbar from './Navbar';
-import HeroSection from './HeroSection';
-import FeaturedProducts from './FeaturedProducts';
-import AboutUs from './AboutUs';
-import Footer from './Footer';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './Navbar'
+import HeroSection from './HeroSection'
+import FeaturedProducts from './FeaturedProducts'
+import AboutUs from './AboutUs'
+import Footer from './Footer'
+import Products from './products' // ✅ Import your Products page
 
-
-function App() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -15,7 +16,19 @@ function App() {
       <AboutUs />
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} /> {/* ✅ Add this route */}
+      </Routes>
+    </Router>
+  )
+}
+
+export default App
