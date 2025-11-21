@@ -53,47 +53,51 @@
   cursor: pointer;
   border-radius: 5px;
 }
+/* --- MOBILE / TABLET RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .hero-container {
+    height: 80vh;
+    padding: 3rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px; /* Let content define height */
-    width: 100%;
-    padding: 4rem 1rem 2rem; /* Top padding for spacing */
+    height: auto;
+    padding: 5rem 1rem 2rem;
     margin-top: 0;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-image: url('./assets/j2.jpg');
-    animation: none; /* Disable slideshow */
-    box-sizing: border-box;
-    overflow: hidden;
-    text-align: center;
-    overflow-x: hidden;
+    animation: none;
   }
 
   .hero-content {
-    z-index: 2;
     max-width: 100%;
     padding: 0 1rem;
-     overflow-x: hidden;
   }
 
   .hero-content h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    line-height: 1.2;
-     overflow-x: hidden;
-     box-sizing:border-box ;
+    line-height: 1.3;
   }
 
   .hero-content p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     line-height: 1.4;
-     overflow-x: hidden;
-     
   }
 
   .hero-content button {
@@ -102,10 +106,28 @@
     width: 100%;
     max-width: 250px;
   }
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+/* ----- SMALL PHONES (EXTRA RESPONSIVE FIX) ----- */
+@media (max-width: 480px) {
+  .hero-container {
+    padding: 4rem 1rem 2rem;
   }
+
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content button {
+    font-size: 0.85rem;
+  }
+}
+
+/* Prevent global scroll issues */
+body {
+  overflow-x: hidden;
 }

@@ -1,0 +1,176 @@
+/* Page Wrapper */
+.ff-contact-page {
+  width: 100%;
+  padding: 40px 20px;
+  
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* Header */
+.ff-contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+.ff-contact-header h1 {
+  font-size: 2.4rem;
+  color: #c2185b;
+}
+
+.ff-contact-header p {
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+/* Main Layout */
+.ff-contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Left: Info */
+.ff-contact-info {
+  flex: 1;
+  background: #fff7f9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.ff-contact-info h2 {
+  font-size: 1.7rem;
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+.ff-contact-info h3 {
+  margin-top: 25px;
+  color: #c2185b;
+}
+
+/* Right: Form */
+.ff-contact-form {
+  flex: 1.2;
+  background: #fcefee;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.ff-contact-form h2 {
+  font-size: 1.7rem;
+  color: #c2185b;
+  margin-bottom: 15px;
+}
+
+.ff-contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ff-contact-form input,
+.ff-contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.ff-contact-form input:focus,
+.ff-contact-form textarea:focus {
+  border-color: #c2185b;
+  box-shadow: 0 0 4px rgba(194, 24, 91, 0.3);
+}
+
+.ff-contact-form button {
+  background: #c2185b;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ff-contact-form button:hover {
+  background: #a4144c;
+}
+
+/* RESPONSIVE DESIGN */
+/* Tablets & small laptops */
+@media (max-width: 900px) {
+  .ff-contact-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .ff-contact-info,
+  .ff-contact-form {
+    width: 100%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .ff-contact-container,
+  .ff-contact-header {
+    margin-top: 50px;
+  }
+}
+
+/* Phones */
+@media (max-width: 550px) {
+  .ff-contact-page,
+  .ff-contact-header{
+    margin-top: 20px;
+    padding: 25px 15px;
+  }
+
+  .ff-contact-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .ff-contact-header p {
+    font-size: 0.95rem;
+  }
+
+  .ff-contact-info,
+  .ff-contact-form {
+    padding: 18px;
+  }
+
+  .ff-contact-info h2,
+  .ff-contact-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .ff-contact-form input,
+  .ff-contact-form textarea {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .ff-contact-form button {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 400px) {
+  .ff-contact-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .ff-contact-form textarea {
+    height: 120px;
+  }
+}

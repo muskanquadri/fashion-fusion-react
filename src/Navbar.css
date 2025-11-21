@@ -44,36 +44,60 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     height: auto;
   }
 
   .logo {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    align-items: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
   }
 
   .nav-links {
     flex-direction: row;
-    align-items: flex-start;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: static;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 0.5rem 0;
-    gap: 0.5rem;
-  }
-
-  .nav-links li {
-    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.4rem 0;
+    gap: 8px;
   }
 
   .nav-links li a {
     font-size: 0.95rem;
-    padding: 0.3rem 0;
+    padding: 0.25rem 0.4rem;
   }
 }
+
+/* Extra small screens (for perfect stability) */
+@media (max-width: 400px) {
+  .navbar {
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 5px;
+  }
+
+  .nav-links li a {
+    font-size: 0.85rem;
+  }
+}
+

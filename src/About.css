@@ -1,0 +1,107 @@
+/* Wrapper */
+.ff-about-page {
+  width: 100%;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* Hero */
+.ff-about-hero {
+  text-align: center;
+  padding: 40px 10px;
+  background: #fcefee;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  border-radius: 12px;
+}
+
+.ff-about-hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #c2185b;
+}
+
+.ff-about-hero p {
+  font-size: 1.1rem;
+}
+
+/* Content Section */
+.ff-about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.ff-about-left {
+  flex: 1;
+}
+
+.ff-about-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #c2185b;
+}
+
+.ff-about-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.ff-about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ff-about-right img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Mission section */
+.ff-about-mission {
+  margin-top: 40px;
+  text-align: center;
+  background: #fff7f9;
+  padding: 30px 15px;
+  border-radius: 12px;
+}
+
+.ff-about-mission h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #c2185b;
+}
+
+.ff-about-mission p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .ff-about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ff-about-right img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .ff-about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .ff-about-left h2,
+  .ff-about-mission h2 {
+    font-size: 1.5rem;
+  }
+}
